@@ -61,8 +61,8 @@ export default function BharatTexHero() {
             playsInline
           >
             <source
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
-              type="video/mp4"
+              src="/bg_video.webm"
+              type="video/webm"
             />
           </video>
 
