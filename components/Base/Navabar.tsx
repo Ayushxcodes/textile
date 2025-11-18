@@ -83,10 +83,11 @@ export default function BharatTexNavbar() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-800">
-                  Bharat <span className="text-orange-500">TEX</span> 2026
+                  NATIONAL{" "}
+                  <span className="text-orange-500">TEXTILE</span> 2026
                 </h1>
                 <p className="text-xs text-gray-500 uppercase tracking-wider">
-                  Textiles | Fashion | Sustainability
+                  MINISTERS CONFERENCE
                 </p>
               </div>
             </div>
