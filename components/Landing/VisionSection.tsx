@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -8,37 +8,14 @@ export default function VisionSection() {
       className="relative w-full overflow-hidden py-20 px-6 bg-cover bg-center"
       style={{ backgroundImage: "url('/visionbg.jpg')" }}
     >
-      {/* Decorative textile-pattern border on all four sides */}
-      
-
-      {/* Content */}
-      <div className="relative max-w-5xl mx-auto text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+      <div className="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        {/* LEFT – Vision Points */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-5xl font-extrabold text-black mb-6"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-5"
         >
-          Vision
-        </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="text-lg md:text-xl text-black max-w-3xl mx-auto leading-relaxed mb-10"
-        >
-          The vision of the National Textile Minister&apos;s Conference is to
-          transform India&apos;s textile sector into a global leader by
-          promoting innovation, sustainability, and inclusivity. By 2030,
-          India&apos;s textile industry will be recognized for its global
-          competitiveness, commitment to sustainability, technological
-          advancements, and a skilled workforce contributing significantly to
-          the national economy and international trade.
-        </motion.p>
-
-        {/* Vision points grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 justify-center">
           {[
             "Global Leadership",
             "Innovative & Sustainable Industry",
@@ -48,10 +25,12 @@ export default function VisionSection() {
           ].map((point, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 text-black text-sm shadow-lg"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="bg-white/20 backdrop-blur-sm border border-white/30 
+                         p-4 text-black font-semibold rounded-lg shadow-lg 
+                         hover:scale-105 hover:shadow-2xl transition cursor-pointer"
               style={{
                 backgroundImage: "url('/bg-4.jpg')",
                 backgroundSize: "cover",
@@ -61,7 +40,42 @@ export default function VisionSection() {
               {point}
             </motion.div>
           ))}
-        </div>
+        </motion.div>
+
+        {/* RIGHT – Text Content */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-right"
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl md:text-5xl text-center font-extrabold mb-6 bg-gradient-to-r 
+                       from-black to-gray-700 bg-clip-text text-transparent"
+          >
+            Vision
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            className="text-lg md:text-xl text-black max-w-xl text-center ml-auto 
+                       leading-relaxed bg-white/30 backdrop-blur-sm 
+                       p-5 rounded-lg border border-white/40 shadow-md"
+          >
+            The vision of the National Textile Minister&apos;s Conference is to
+            transform India&apos;s textile sector into a global leader by
+            promoting innovation, sustainability, and inclusivity. By 2030,
+            India&apos;s textile industry will be recognized for its global
+            competitiveness, sustainability, technological advancements, and
+            skilled workforce contributing significantly to the national
+            economy.
+          </motion.p>
+        </motion.div>
       </div>
     </section>
   );

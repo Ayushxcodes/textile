@@ -1,6 +1,7 @@
 import BharatTexFooter from '@/components/Base/Footer'
 import BackgroundContent from '@/components/Landing/BackgroundContent'
 import Hero from '@/components/Landing/HeroSection'
+import DiscussionTopicsSection from '@/components/Landing/KeyDiscussion'
 import MissionSection from '@/components/Landing/MissionSection'
 import TextileObjectiveSection from '@/components/Landing/ObjectiveSection'
 import SlidingBanner from '@/components/Landing/SlidingBanner'
@@ -11,7 +12,6 @@ const Homepage = () => {
   return (
     <div>
       <Hero />
-      <SlidingBanner />
       <BackgroundContent />
       <TextileObjectiveSection
         imageUrl="/bg-4.jpg"
@@ -19,6 +19,7 @@ const Homepage = () => {
       />
       <VisionSection />
       <MissionSection/>
+      <DiscussionTopicsSection/>
       <BharatTexFooter />
     </div>
   );
