@@ -71,7 +71,7 @@ export default function TextileObjectiveSection({
               animate={{ opacity: 1 }}
               transition={{ delay: 0.15, duration: 0.6 }}
             >
-              The National Textile Ministers' Conference, scheduled for the 8th
+              The National Textile Minister&apos;s Conference, scheduled for the 8th
               and 9th of January 2026, is being organized by the Ministry of
               Textiles, Government of India. The key objective is to align
               national strategies with evolving priorities of India’s textile

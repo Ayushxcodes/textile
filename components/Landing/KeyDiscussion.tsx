@@ -2,10 +2,18 @@
 import React, { useState } from "react";
 import { Sparkles } from "lucide-react";
 
-export default function DiscussionTopicsSection() {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+// TypeScript Interface for Color Scheme
+interface ColorScheme {
+  primary: string;
+  secondary: string;
+  accent: string;
+}
 
-  const topics = [
+export default function DiscussionTopicsSection() {
+  // FIX: Explicitly define the state type as number or null.
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const topics: string[] = [
     "Review of State Textile Policies",
     "Boosting Exports & Global Competitiveness",
     "Sustainability & Eco-Friendly Textiles",
@@ -25,7 +33,7 @@ export default function DiscussionTopicsSection() {
     "Collaboration with Fashion Institutes & Industry",
   ];
 
-  const colors = [
+  const colors: ColorScheme[] = [
     { primary: "#FF6B6B", secondary: "#FFE66D", accent: "#4ECDC4" },
     { primary: "#A8E6CF", secondary: "#FFD3B6", accent: "#FFAAA5" },
     { primary: "#FF8B94", secondary: "#C7CEEA", accent: "#FFEAA7" },
