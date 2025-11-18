@@ -84,11 +84,11 @@ export default function BharatTexNavbar() {
 
               <div>
                 <h1 className="text-lg font-bold text-gray-800 leading-tight">
-                  NATIONAL <span className="text-orange-500">TEXTILE</span> 2026
+                  NATIONAL <span className="text-orange-500"> TEXTILE</span>{" "}MINISTERS CONFERENCE
                 </h1>
-                <p className="text-[9px] text-gray-500 uppercase tracking-wider -mt-1">
-                  MINISTERS CONFERENCE
-                </p>
+                <h1 className="text-[9px] text-gray-500 uppercase tracking-wider -mt-1">
+                  2026
+                </h1>
               </div>
             </div>
           </div>
