@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -18,7 +18,7 @@ export default function TextileObjectiveSection({
       className={`relative w-full overflow-hidden ${className}`}
       aria-label="National Textile Ministers' Conference objective"
     >
-      {/* Background image (no overlay) */}
+      {/* Background image */}
       <div
         className="absolute inset-0 bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url(${imageUrl})` }}
@@ -26,7 +26,7 @@ export default function TextileObjectiveSection({
         aria-label={imageAlt}
       />
 
-      {/* Visually-hidden img for screen readers / semantics */}
+      {/* Visually-hidden image */}
       <img src={imageUrl} alt={imageAlt} className="sr-only" />
 
       {/* Content */}
@@ -38,7 +38,7 @@ export default function TextileObjectiveSection({
       >
         <div>
           <motion.h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-black leading-tight"
             initial={{ scale: 0.98 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
@@ -47,7 +47,7 @@ export default function TextileObjectiveSection({
           </motion.h2>
 
           <motion.p
-            className="mt-4 text-base md:text-lg lg:text-xl text-black max-w-3xl whitespace-pre-line"
+            className="mt-4 text-base text-center md:text-lg lg:text-xl text-black max-w-3xl whitespace-pre-line"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.15, duration: 0.6 }}
@@ -66,19 +66,60 @@ export default function TextileObjectiveSection({
           transition={{ duration: 0.8, ease: "easeOut" }}
         />
       </motion.div>
-      
 
-      {/* Ensure section is at least a good height so background shows */}
+      {/* Decorative textile-pattern border on all four sides */}
+      <div className="pointer-events-none absolute inset-0">
+        {/* Top border */}
+        <div
+          className="absolute top-0 left-0 w-full h-6 bg-repeat-x"
+          style={{
+            backgroundImage: "url('/textile-border.jpg')",
+            backgroundSize: "contain",
+          }}
+        />
+        {/* Bottom border */}
+        <div
+          className="absolute bottom-0 left-0 w-full h-6 bg-repeat-x"
+          style={{
+            backgroundImage: "url('/textile-border.jpg')",
+            backgroundSize: "contain",
+          }}
+        />
+        {/* Left border */}
+        <div
+          className="absolute top-0 left-0 h-full w-6 bg-repeat-y"
+          style={{
+            backgroundImage: "url('/textile-border.jpg')",
+            backgroundSize: "contain",
+          }}
+        />
+        {/* Right border */}
+        <div
+          className="absolute top-0 right-0 h-full w-6 bg-repeat-y"
+          style={{
+            backgroundImage: "url('/textile-border.jpg')",
+            backgroundSize: "contain",
+          }}
+        />
+      </div>
+
       <style jsx>{`
-        section { min-height: 320px; }
-        @media (min-width: 768px) { section { min-height: 420px; } }
-        @media (min-width: 1024px) { section { min-height: 520px; } }
-
-        /* subtle text shadow to keep black text legible over images without using an overlay */
-        .text-black { text-shadow: 0 1px 0 rgba(255,255,255,0.35); }
-
-        /* Remove any default overlaying elements from consuming layouts */
-        section .overlay, section .bg-overlay { display: none !important; }
+        section {
+          min-height: 320px;
+        }
+        @media (min-width: 768px) {
+          section {
+            min-height: 420px;
+          }
+        }
+        @media (min-width: 1024px) {
+          section {
+            min-height: 520px;
+          }
+        }
+        .text-black {
+          text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+        }
       `}</style>
     </section>
   );
