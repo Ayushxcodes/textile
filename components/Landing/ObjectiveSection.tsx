@@ -68,59 +68,7 @@ export default function TextileObjectiveSection({
       </motion.div>
 
       {/* Decorative textile-pattern border on all four sides */}
-      <div className="pointer-events-none absolute inset-0">
-        {/* Top border */}
-        <div
-          className="absolute top-0 left-0 w-full h-6 bg-repeat-x"
-          style={{
-            backgroundImage: "url('/textile-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        {/* Bottom border */}
-        <div
-          className="absolute bottom-0 left-0 w-full h-6 bg-repeat-x"
-          style={{
-            backgroundImage: "url('/textile-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        {/* Left border */}
-        <div
-          className="absolute top-0 left-0 h-full w-6 bg-repeat-y"
-          style={{
-            backgroundImage: "url('/textile-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        {/* Right border */}
-        <div
-          className="absolute top-0 right-0 h-full w-6 bg-repeat-y"
-          style={{
-            backgroundImage: "url('/textile-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-      </div>
-
-      <style jsx>{`
-        section {
-          min-height: 320px;
-        }
-        @media (min-width: 768px) {
-          section {
-            min-height: 420px;
-          }
-        }
-        @media (min-width: 1024px) {
-          section {
-            min-height: 520px;
-          }
-        }
-        .text-black {
-          text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
-        }
-      `}</style>
+      
     </section>
   );
 }

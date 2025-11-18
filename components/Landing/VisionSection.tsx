@@ -9,36 +9,7 @@ export default function VisionSection() {
       style={{ backgroundImage: "url('/visionbg.jpg')" }}
     >
       {/* Decorative textile-pattern border on all four sides */}
-      <div className="pointer-events-none absolute inset-0">
-        <div
-          className="absolute top-0 left-0 w-full h-6 bg-repeat-x"
-          style={{
-            backgroundImage: "url('/objective-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        <div
-          className="absolute bottom-0 left-0 w-full h-6 bg-repeat-x"
-          style={{
-            backgroundImage: "url('/objective-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        <div
-          className="absolute top-0 left-0 h-full w-6 bg-repeat-y"
-          style={{
-            backgroundImage: "url('/objective-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        <div
-          className="absolute top-0 right-0 h-full w-6 bg-repeat-y"
-          style={{
-            backgroundImage: "url('/objective-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-      </div>
+      
 
       {/* Content */}
       <div className="relative max-w-5xl mx-auto text-center">

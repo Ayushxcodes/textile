@@ -9,36 +9,6 @@ export default function MissionSection() {
       style={{ backgroundImage: "url('/bg-1.jpg')" }}
     >
       {/* Textile border */}
-      <div className="pointer-events-none absolute inset-0">
-        <div
-          className="absolute top-0 left-0 w-full h-6 bg-repeat-x"
-          style={{
-            backgroundImage: "url('/textile-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        <div
-          className="absolute bottom-0 left-0 w-full h-6 bg-repeat-x"
-          style={{
-            backgroundImage: "url('/textile-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        <div
-          className="absolute top-0 left-0 h-full w-6 bg-repeat-y"
-          style={{
-            backgroundImage: "url('/textile-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-        <div
-          className="absolute top-0 right-0 h-full w-6 bg-repeat-y"
-          style={{
-            backgroundImage: "url('/textile-border.jpg')",
-            backgroundSize: "contain",
-          }}
-        />
-      </div>
 
       {/* Content */}
       <div className="relative max-w-5xl mx-auto text-center text-black">
