@@ -42,22 +42,38 @@ export default function BharatTexFooter() {
           </div>
         </div>
 
-        {/* Column 2 — Event Title */}
-        <div className="text-center md:text-left space-y-3">
-          <h3 className="text-2xl font-bold text-orange-600 leading-tight">
-            NATIONAL TEXTILE
-          </h3>
-          <h3 className="text-2xl font-bold text-green-600 leading-tight">
-            MINISTERS CONFERENCE
-          </h3>
+        {/* Column 2 — Event Title + Images */}
+        <div className="flex flex-col items-center md:flex-row md:justify-center gap-20">
+          {/* Left Image */}
+          <img
+            src="/logo-left.png"
+            alt="Left Decorative"
+            className="w-40 h-40 md:w-40 md:h-30 object-contain"
+          />
 
-          <p className="font-semibold text-gray-700 text-lg pt-2">
-            8th & 9th January 2026
-          </p>
+          {/* Text Block */}
+          <div className="text-center space-y-2 px-2">
+            <h3 className="text-2xl font-bold text-orange-600 leading-tight">
+              NATIONAL TEXTILE
+            </h3>
+            <h3 className="text-2xl font-bold text-green-600 leading-tight">
+              MINISTERS CONFERENCE
+            </h3>
+            <p className="font-semibold text-gray-700 text-lg pt-2">
+              8th & 9th January 2026
+            </p>
+          </div>
+
+          {/* Right Image */}
+          <img
+            src="/right-logo.svg"
+            alt="Right Decorative"
+            className="w-40 h-40 md:w-40 md:h-40 object-contain"
+          />
         </div>
 
         {/* Column 3 — Venue Info */}
-        <div className="space-y-2 md:text-right">
+        <div className="space-y-2 md:text-right text-center md:text-right">
           <h4 className="font-bold text-gray-800 text-lg">Venue</h4>
 
           <p className="text-sm leading-relaxed font-medium">
