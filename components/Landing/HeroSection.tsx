@@ -125,7 +125,7 @@ export default function BharatTexHero() {
             }`}
           >
             <img
-              src="/slide-1.jpg"
+              src="/banner.jpeg"
               alt="Banner"
               className="rounded-2xl shadow-2xl w-[90%] max-w-[550px] md:max-w-5xl mx-auto"
             />
