@@ -9,6 +9,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function BharatTexHero() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -124,10 +125,13 @@ export default function BharatTexHero() {
               activeSlide === 1 ? "translate-y-0" : "translate-y-6"
             }`}
           >
-            <img
+            <Image
               src="/banner.jpeg"
               alt="Banner"
+              width={550}
+              height={350}
               className="rounded-2xl shadow-2xl w-[90%] max-w-[550px] md:max-w-5xl mx-auto"
+              priority
             />
           </div>
         </section>

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 export default function BharatTexFooter() {
   return (
@@ -45,10 +46,13 @@ export default function BharatTexFooter() {
         {/* Column 2 — Event Title + Images */}
         <div className="flex flex-col items-center md:flex-row md:justify-center gap-20">
           {/* Left Image */}
-          <img
+          <Image
             src="/logo-left.png"
             alt="Left Decorative"
+            width={160}
+            height={120}
             className="w-40 h-40 md:w-40 md:h-30 object-contain"
+            loading="lazy"
           />
 
           {/* Text Block */}
@@ -65,10 +69,13 @@ export default function BharatTexFooter() {
           </div>
 
           {/* Right Image */}
-          <img
+          <Image
             src="/right-logo.svg"
             alt="Right Decorative"
-            className="w-40 h-40 md:w-40 md:h-40 object-contain"
+            width={160}
+            height={120}
+            className="w-40 h-40 md:w-40 md:h-30 object-contain"
+            loading="lazy"
           />
         </div>
 

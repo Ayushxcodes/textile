@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 
 const SlidingBanner = ({
   images = ["/slide-1.jpg", "/slide-1.jpg"],
@@ -31,11 +32,14 @@ const SlidingBanner = ({
         className="flex transition-transform duration-700 ease-in-out h-full"
       >
         {images.map((src, i) => (
-          <img
+          <Image
             key={i}
             src={src}
             alt="banner"
+            width={1200}
+            height={400}
             className="w-full h-full object-cover flex-shrink-0 min-w-full"
+            loading="lazy"
           />
         ))}
       </div>
